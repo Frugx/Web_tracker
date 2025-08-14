@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>BTC Wallet Viewer</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #121212; color: white; text-align: center; padding: 20px; }
+    h1 { color: #f7931a; }
+    #balance { font-size: 24px; margin: 10px 0; }
+    table { margin: auto; border-collapse: collapse; width: 90%; }
+    th, td { border: 1px solid #555; padding: 8px; }
+    th { background: #333; }
+    td { background: #222; }
+  </style>
+</head>
+<body>
+  <h1>Bitcoin Wallet Info</h1>
+  <div id="balance">Loading saldo...</div>
+  <canvas id="qrcode"></canvas>
+  <h2>Transaksi Terakhir</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Tanggal</th>
+                <th>Hash Transaksi</th>
+                <th>Alamat Penerima & Jumlah</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="transactions">
+            <tr><td colspan="4">Loading...</td></tr>
+        </tbody>
+    </table>
+
+  <script src="qrcode.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
